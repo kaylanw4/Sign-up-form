@@ -1,0 +1,51 @@
+:root{
+    --image-height: 100vh;
+    --image-text-color: white;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.img-container {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+
+.img-container>img {
+    height: var(--image-height);
+    width: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo-text {
+    font-size: 5rem;
+    color: var(--image-text-color);
+}
+
+.logo>img{
+    height: inherit;
+    width: auto;
+    margin: 10px 0px ;
+}
+
+.img-text {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+    color: var(--image-text-color);
+}
