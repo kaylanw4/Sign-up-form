@@ -130,6 +130,7 @@ input:focus {
 } 
 
 form button {
+    color: var(--image-text-color);
     font-size: 1rem;
     margin: var(--form-margin) var(--form-left-margin);
     margin-bottom: 0;
@@ -137,8 +138,13 @@ form button {
     border: none;
     border-radius: 5px;
     box-shadow: var(--shadow);
-    color: white;
     background-color: var(--theme-color);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-0.2rem);
 }
 
 .login {
