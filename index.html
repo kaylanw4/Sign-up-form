@@ -13,7 +13,7 @@
             <div class="img-container">
                 <div class="logo">
                     <img src="./images/odin-lined.png" alt="odin-logo">
-                    <div class="logo-text">ODIN</div>
+                    <div class="logo-text">MATTERHORN</div>
                 </div>
                 <!-- <img src="./images/patrick-robert-doyle-svS24gSgqRs-unsplash.jpg"
                 alt="background image"> -->
@@ -34,32 +34,53 @@
                         <legend>Let's do this!</legend>
                         <div class="form-row">
                             <div class="form-element">
-                                <label for="firstname">FIRST NAME</label>
-                                <input type="text" id="firstname">
+                                <label for="firstname">
+                                    FIRST NAME
+                                    <span aria-label="required">*</span>
+                                </label>
+                                <input type="text" id="firstname" required>
                             </div>
                             <div class="form-element">
-                                <label for="lastname">LAST NAME</label>
-                                <input type="text" id="lastname">
+                                <label for="lastname">
+                                    LAST NAME
+                                    <span aria-label="required">*</span>
+                                </label>
+                                <input type="text" id="lastname" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-element">
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email">
+                                <label for="email">
+                                    EMAIL
+                                    <span aria-label="required">*</span>
+                                </label>
+                                <input type="email" id="email" required>
                             </div>
                             <div class="form-element">
                                 <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    placeholder="888-888-8888"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    maxlength="12">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-element">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password">
+                                <label for="password">
+                                    PASSWORD
+                                    <span aria-label="required">*</span>
+                                </label>
+                                <input type="password" id="password" name="password" required>
                             </div>
                             <div class="form-element">
-                                <label for="comfirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-password" name="password">
+                                <label for="comfirm-password">
+                                    CONFIRM PASSWORD
+                                    <span aria-label="required">*</span>
+                                </label>
+                                <input type="password" id="confirm-password" name="password" required>
                             </div>
                         </div>
                     </fieldset>
