@@ -3,6 +3,11 @@
     --image-text-color: white;
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url('./fonts/Norse-Bold.otf') format('opentype');
+}
+
 body {
     display: flex;
     margin: 0;
@@ -27,12 +32,14 @@ body {
     top: 150px;
     height: 15vh;
     width: 100%;
+    padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .logo-text {
     font-size: 5rem;
-    color: var(--image-text-color);
+    font-family: Norse-Bold;
+    padding-top: 20px;
 }
 
 .logo>img{
@@ -41,11 +48,15 @@ body {
     margin: 10px 0px ;
 }
 
+.logo-text, .img-text, .img-text>a {
+    color: var(--image-text-color);
+}
+
 .img-text {
     position: absolute;
     left: 0;
     bottom: 15px;
     text-align: center;
     width: 100%;
-    color: var(--image-text-color);
 }
+
