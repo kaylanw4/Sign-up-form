@@ -155,3 +155,15 @@ button:hover {
     text-decoration: none;
     color: var(--theme-color);
 }
+
+#message {
+    font-size: 0.7rem;
+}
+
+.match {
+    border: 1px green solid !important;
+}
+
+.no-match {
+    border: 1px red solid !important;
+}
