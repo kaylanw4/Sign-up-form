@@ -1,12 +1,16 @@
 :root{
-    --image-height: 100vh;
-    --image-text-color: black;
+    --image-text-color: white;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --form-left-margin: 2.7vw;
+    --form-margin: 4vh;
+    --theme-color: #8584A5;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @font-face {
@@ -25,9 +29,9 @@
 }
 
 .img-container {
-    background-image: url(./images/patrick-robert-doyle-svS24gSgqRs-unsplash.jpg);
+    background-image: url(./images/fabrice-villard-QrRSm-QbjW0-unsplash.jpg);
     background-position: center;
-    background-size: var(--image-height);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 40vw;
 }
@@ -38,13 +42,13 @@
     align-items: center;
     height: auto;
     position: relative;
-    top: 5vh;
+    top: 10vh;
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .logo-text {
-    color: white;
+    color: var(--image-text-color);
     font-size: 5rem;
     font-family: Norse-Bold;
     padding-top: 20px;
@@ -72,13 +76,76 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: var(--form-margin);
+}
+
+.header-text, legend{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .header-text {
-    font-size: 1.3rem;
-    font-weight: bold;
     white-space: pre-line;
-    margin: 0 40px;
+    margin: 0 var(--form-left-margin);
 }
 
+fieldset {
+    position: relative;
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+legend {
+    position: relative;
+    top: 3vh;
+    left: var(--form-left-margin);
+    margin: 10px 0;
+}
+
+.form-row {
+    margin: var(--form-margin) var(--form-left-margin);
+    display: flex;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+} 
+
+label{
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+input {
+    border: 0.7px #E5E7EB solid;
+    border-radius: 5px;
+    width: 15vw;
+    height: 3.4vh;
+}
+
+input:focus {
+    box-shadow: var(--shadow);
+} 
+
+form button {
+    font-size: 1rem;
+    margin: var(--form-margin) var(--form-left-margin);
+    margin-bottom: 0;
+    padding: 1.8vh 3.5vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    color: white;
+    background-color: var(--theme-color);
+}
+
+.login {
+    margin: 0 var(--form-left-margin);
+}
+
+.login a{
+    text-decoration: none;
+    color: var(--theme-color);
+}

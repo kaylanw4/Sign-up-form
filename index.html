@@ -19,8 +19,8 @@
                 alt="background image"> -->
             
                 <div class="img-text">
-                    Photo by <a href="https://unsplash.com/@teapowered?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Robert Doyle</a>
-                    on <a href="https://unsplash.com/photos/svS24gSgqRs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    Photo by <a href="https://unsplash.com/pt-br/@fabulu75?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fabrice Villard</a> 
+                    on <a href="https://unsplash.com/photos/QrRSm-QbjW0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                 </div>
             </div>
             <div class="main">
@@ -32,23 +32,35 @@
                 <form>
                     <fieldset>
                         <legend>Let's do this!</legend>
-                        <div>
-                            <label for="firstname">FIRST NAME</label>
-                            <input type="text" id="firstname">
-                            <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname">
+                        <div class="form-row">
+                            <div class="form-element">
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" id="firstname">
+                            </div>
+                            <div class="form-element">
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname">
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <div class="form-row">
+                            <div class="form-element">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-element">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
                         </div>
-                        <div>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
-                            <label for="comfirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="password">
+                        <div class="form-row">
+                            <div class="form-element">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="form-element">
+                                <label for="comfirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="password">
+                            </div>
                         </div>
                     </fieldset>
                     <button type="submit">Create Account</button>
