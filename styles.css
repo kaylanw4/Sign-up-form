@@ -121,8 +121,8 @@ label{
 input {
     border: 0.7px #E5E7EB solid;
     border-radius: 5px;
-    width: 15vw;
-    height: 3.4vh;
+    width: 235px;
+    height: 25px;
 }
 
 input:focus {
